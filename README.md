@@ -1,6 +1,6 @@
 # npmtest-gulp-chmod
 
-#### basic test coverage for  gulp-chmod (v2.0.0)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-chmod.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-chmod) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-chmod.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-chmod)
+#### basic test coverage for  [gulp-chmod (v2.0.0)](https://github.com/sindresorhus/gulp-chmod#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-chmod.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-chmod) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-chmod.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-chmod)
 
 #### Change permissions of Vinyl files
 
@@ -35,24 +35,37 @@
 ```json
 
 {
-    "name": "gulp-chmod",
-    "version": "2.0.0",
-    "description": "Change permissions of Vinyl files",
-    "license": "MIT",
-    "repository": "sindresorhus/gulp-chmod",
     "author": {
         "name": "Sindre Sorhus",
         "url": "sindresorhus.com"
     },
+    "bugs": {
+        "url": "https://github.com/sindresorhus/gulp-chmod/issues"
+    },
+    "dependencies": {
+        "deep-assign": "^1.0.0",
+        "stat-mode": "^0.2.0",
+        "through2": "^2.0.0"
+    },
+    "description": "Change permissions of Vinyl files",
+    "devDependencies": {
+        "gulp-util": "^3.0.0",
+        "mocha": "*",
+        "xo": "*"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "00c390b928a0799b251accf631aa09e01cc6299c",
+        "tarball": "https://registry.npmjs.org/gulp-chmod/-/gulp-chmod-2.0.0.tgz"
+    },
     "engines": {
         "node": ">=4"
-    },
-    "scripts": {
-        "test": "xo && mocha"
     },
     "files": [
         "index.js"
     ],
+    "gitHead": "68412ff128a0f60c21883555e3b480849e35d4b8",
+    "homepage": "https://github.com/sindresorhus/gulp-chmod#readme",
     "keywords": [
         "gulpplugin",
         "chmod",
@@ -62,19 +75,26 @@
         "stream",
         "permissions"
     ],
-    "dependencies": {
-        "deep-assign": "^1.0.0",
-        "stat-mode": "^0.2.0",
-        "through2": "^2.0.0"
+    "license": "MIT",
+    "maintainers": [
+        {
+            "name": "sindresorhus"
+        }
+    ],
+    "name": "gulp-chmod",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sindresorhus/gulp-chmod.git"
     },
-    "devDependencies": {
-        "mocha": "*",
-        "gulp-util": "^3.0.0",
-        "xo": "*"
+    "scripts": {
+        "test": "xo && mocha"
     },
+    "version": "2.0.0",
     "xo": {
         "esnext": true
-    }
+    },
+    "bin": {}
 }
 ```
 
